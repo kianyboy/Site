@@ -1,0 +1,12 @@
+/*Phones*/
+@media only screen and (max-width: 767px) {
+}
+/*Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1270px) {
+}
+/*Laptops*/
+@media only screen and (min-width: 1024px) and (max-width: 1919px) {
+}
+/* Desktop*/
+@media only screen and (min-width: 1920px) {
+}

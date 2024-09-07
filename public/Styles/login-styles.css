@@ -1,0 +1,184 @@
+/* Algemeen Stijl */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #666; /* Lichtere tekstkleur */
+    margin: 0;
+    padding: 0;
+}
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.image-wrapper {
+    margin-bottom: 2rem; /* Ruimte tussen afbeelding en formulier */
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0cc0df;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333; /* Donkere kleur voor labels */
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #0cc0df;
+    outline: none;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: #0cc0df;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #09a4d1;
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+a {
+    color: #0cc0df;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px) {
+    .main-container {
+        padding: 1rem;
+    }
+
+    .form-wrapper {
+        padding: 1rem;
+    }
+
+    input, button {
+        font-size: 0.875rem;
+    }
+
+    button {
+        padding: 0.5rem;
+    }
+}
+
+/*Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1270px) {
+    .main-container {
+        padding: 1.5rem;
+    }
+
+    .form-wrapper {
+        padding: 1.5rem;
+    }
+
+    input, button {
+        font-size: 0.95rem;
+    }
+
+    button {
+        padding: 0.65rem;
+    }
+}
+
+/*Laptops*/
+@media only screen and (min-width: 1024px) and (max-width: 1919px) {
+    .main-container {
+        padding: 2rem;
+    }
+
+    .form-wrapper {
+        padding: 2rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 0.75rem;
+    }
+}
+
+/* Desktop*/
+@media only screen and (min-width: 1920px) {
+    .main-container {
+        padding: 2rem;
+    }
+
+    .form-wrapper {
+        padding: 2rem;
+        max-width: 800px;
+    }
+
+    input, button {
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 0.75rem 1.25rem;
+    }
+}
